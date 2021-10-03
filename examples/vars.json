@@ -1,0 +1,46 @@
+[
+  {
+    "type": "STRING",
+    "value": "firstName"
+  },
+  {
+    "type": "ASSIGNMENT",
+    "value": "="
+  },
+  {
+    "type": "STRING",
+    "value": "John"
+  },
+  {
+    "type": "NEWLINE",
+    "value": "\n"
+  },
+  {
+    "type": "STRING",
+    "value": "lastName"
+  },
+  {
+    "type": "ASSIGNMENT",
+    "value": "="
+  },
+  {
+    "type": "STRING",
+    "value": "Doe"
+  },
+  {
+    "type": "NEWLINE",
+    "value": "\n"
+  },
+  {
+    "type": "STRING",
+    "value": "age"
+  },
+  {
+    "type": "ASSIGNMENT",
+    "value": "="
+  },
+  {
+    "type": "NUMBER",
+    "value": "20"
+  }
+]
