@@ -22,7 +22,7 @@ python main.py <src-data-file> <dest-data-file>
 # <dest-data-file> - file where the tokens list (json array) will be saved
 ```
 
-See `examples` directory for some examples of the output.
+Go to [examples](./examples) directory to see some examples of the output.
 
 ## Run tests
 
