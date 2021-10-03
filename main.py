@@ -26,4 +26,4 @@ if __name__ == "__main__":
         src, dest = sys.argv[1:3]
         main(src, dest)
     except ValueError as _:
-        print("Please provide all the value")
+        print("Please provide all the required arguments")
