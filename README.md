@@ -7,6 +7,8 @@ it identifies tokens of type:
 - NEWLINE - "\n"
 - ASSIGNMENT - equals sign
 
+> The lexer ignores whitespace tokens
+
 ## Requirements
 
 - Python 3 (I used Python 3.9)
