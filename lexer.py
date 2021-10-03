@@ -45,6 +45,9 @@ class Lexer:
     def feed(self, data: str):
         self.data = data
 
+    def add_token(self, type: Tokens, value: str):
+        self.tokens.append(Token(type, value))
+
     def is_eof(self):
         return self.position == len(self.data)
 
@@ -61,7 +64,7 @@ class Lexer:
 
             c = self.data[self.position]
 
-        self.tokens.append(Token(Tokens.NUMBER, number))
+        self.add_token(Tokens.NUMBER, number)
         return None
 
     def consumeString(self) -> None:
@@ -75,7 +78,7 @@ class Lexer:
             if self.is_eof():
                 break
 
-        self.tokens.append(Token(Tokens.STRING, string))
+        self.add_token(Tokens.STRING, string)
         return None
 
     def start(self):
@@ -101,13 +104,13 @@ class Lexer:
 
             # assingment/equal sign
             if c == "=":
-                self.tokens.append(Token(Tokens.ASSIGNMENT, c))
+                self.add_token(Tokens.ASSIGNMENT, c)
                 self.position += 1
                 continue
 
             # newline
             if c in ["\n", "\r\n"]:
-                self.tokens.append(Token(Tokens.NEWLINE, c))
+                self.add_token(Tokens.NEWLINE, c)
                 self.position += 1
                 continue
 
